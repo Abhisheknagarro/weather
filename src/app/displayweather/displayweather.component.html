@@ -1,0 +1,32 @@
+<div>
+  <div class="row" id="nanocontainer">
+    <div class="card col-md-9 col-sm-9" id="nano">
+      <table class="table-condensed">
+        <tr>
+          <td class="col-md-2">
+              <strong>Date</strong><br />
+              {{weatherdataarray.time | date:'fullDate'}}
+            </td>
+          <td class="col-md-3">
+            <div class="well">
+              <img
+                src="http://openweathermap.org/img/w/{{weatherdataarray.icon}}.png"
+                alt=""
+                width="100"
+              />
+            </div>
+          </td>
+          <td class="col-md-1">
+            <strong>Max Temp {{ weatherdataarray.maxtemp }}&#176;C</strong> <br />
+            Min Temp {{ weatherdataarray.mintemp }}&#176;C
+          </td>
+          <td class="col-md-2">{{ weatherdataarray.description }}</td>
+          <td class="col-md-1">
+            <strong>Humidity</strong><br />
+            {{ weatherdataarray.humidity }}%
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

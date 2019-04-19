@@ -1,0 +1,39 @@
+<div>
+    <div class="row" id="nanocontainer">
+      <div class="card col-md-9 col-sm-9" id="nano">
+        <table class="table-condensed">
+          <tr>
+              <td class="col-md-2">
+                  <strong><h4><b><i>Current</i></b></h4></strong>
+                  <strong><h4>{{ currentweather[0].city }}</h4></strong>
+              </td>
+            <td class="col-md-2">
+                <strong>Date</strong><br />
+                {{currentweather[0].time | date:'long'}}
+              </td>
+            <td class="col-md-3">
+              <div class="well">
+                <img
+                  src="http://openweathermap.org/img/w/{{currentweather[0].icon}}.png"
+                  alt=""
+                  width="100"
+                />
+              </div>
+            </td>
+            <td class="col-md-1">
+              <strong>Current Temperature</strong> <br />
+              {{ currentweather[0].temp }}&#176;C
+            </td>
+            <td class="col-md-2">{{ currentweather[0].description }}</td>
+            <td class="col-md-1">
+              <strong>Humidity</strong><br />
+              {{ currentweather[0].humidity }}%<br>
+              <strong>Wind</strong><br />
+              {{ currentweather[0].wind }}km/hr<br>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  

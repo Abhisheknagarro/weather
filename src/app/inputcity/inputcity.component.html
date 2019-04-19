@@ -1,0 +1,30 @@
+<div>
+  <form>
+    <div class="form-row align-items-center">
+      <div class="col-auto">
+        <div class="md-form">
+          <input
+            [(ngModel)]="cityname"
+            name="input"
+            type="text"
+            class="form-control mb-2 text-white"
+            id="inputcity"
+            placeholder="Enter City Name"
+            (keyup.enter)="sendCity()"
+          />
+          <label class="sr-only text-white" for="inputcity">City Name</label>
+        </div>
+      </div>
+      <div class="col-auto">
+        <button
+          type="button"
+          class="btn btn-light mb-0"
+          id="submitcity"
+          (click)="sendCity()"
+        >
+          <h6><b><i>Get Weather</i></b></h6>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

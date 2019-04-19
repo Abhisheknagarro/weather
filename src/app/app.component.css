@@ -1,0 +1,15 @@
+#nanocontainer {
+    margin-top: 35px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.6;
+  }
+
+  #weatherarray{
+      margin-top: 2%;
+  }

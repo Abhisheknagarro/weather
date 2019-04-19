@@ -1,0 +1,11 @@
+#nanocontainer {
+  margin-top: 50px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: auto;
+  margin-bottom: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.6;
+}
